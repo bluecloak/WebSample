@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bluecloak.sample.multi.datasource.mybatis.mapper.primary.PrimaryMapper">
+
+    <insert id="insertSampleData" parameterType="SampleDataEntity" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO TBL_SAMPLE ( id, name ) VALUES ( SEQ_SAMPLE_ID.nextval, #{name} )
+    </insert>
+</mapper>
