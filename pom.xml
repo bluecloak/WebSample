@@ -18,6 +18,10 @@
     <name>WebSample</name>
     <description>Sample Web Projects</description>
 
+    <modules>
+        <module>multi-datasource-mybatis</module>
+    </modules>
+
     <properties>
         <java.version>11</java.version>
     </properties>
